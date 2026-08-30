@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiniWhiz — Early Childhood Learning App | QA & Beta Tester Portal</title>
+  <meta name="description"
+    content="Official Application Home Page and QA Beta Testing Portal for MiniWhiz early childhood literacy application. Access published APK, test execution guidelines (2-3 hrs duration), Android specs & storage requirements, privacy policy, and terms of service.">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Clean Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="MiniWhiz Logo" class="nav-logo-img"
+          style="height: 44px; width: auto; max-height: 44px; display: block;">
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-item active">Home</a>
+        <a href="#duration" class="nav-item">Test Duration</a>
+        <a href="#specs" class="nav-item">Android Specs</a>
+        <a href="#checklist" class="nav-item">Testing Scope</a>
+        <a href="privacy.html" class="nav-item">Privacy Policy</a>
+        <a href="terms.html" class="nav-item">Terms of Service</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="downloads/com.miniwhiz.miniwhiz-Signed.apk" download class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-download"></i> Download APK
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section: Featuring User's Uploaded Mobile Mockup -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-shield-halved"></i> Official Application & Tester Portal
+          </div>
+          <h1 class="hero-title">
+            Where Early Literacy Meets Interactive Play
+          </h1>
+          <p class="hero-description">
+            MiniWhiz transforms foundational reading, phonics, vocabulary, and spelling into engaging interactive lessons for young minds. Access our official Android APK build, test coverage guidelines, system requirements, and legal documentation.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="downloads/com.miniwhiz.miniwhiz-Signed.apk" download class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-download"></i> Download Published APK
+            </a>
+            <a href="#duration" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-clock"></i> Test Duration (2–3h)
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <i class="fa-brands fa-android" style="color: #3DDC84;"></i> Target: Android Only
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-hourglass-half" style="color: #38BDF8;"></i> Duration: 2–3 Hours
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-database" style="color: #2563EB;"></i> Storage: 350 MB Min / 1 GB Rec
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="assets/hero-mockup.png" alt="MiniWhiz App Interface" class="screen-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Overview & Main Screen Showcase (Clean Single Mockup) -->
+    <section class="features-section" id="showcase">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-tag">Interactive Environment</span>
+          <h2 class="section-title">Designed for Early Childhood Learning</h2>
+          <p class="section-subtitle">Intuitive dashboard featuring child-friendly navigation, Learning Area modules, and Story Time library.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; background: #F8FAFC; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 40px;">
+          <div style="display: flex; justify-content: center;">
+            <div class="phone-mockup" style="width: 270px; height: 550px;">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="assets/hero-mockup.png" alt="MiniWhiz Main Dashboard" class="screen-img">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 16px;">
+              Personalized Child Learning Dashboard
+            </h3>
+            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">
+              MiniWhiz welcomes young learners by name with custom avatars, providing seamless one-tap entry into two core pillars: <strong>Learning Area</strong> and <strong>Story Time</strong>.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div style="width: 42px; height: 42px; background: #84CC16; color: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div>
+                  <h4 style="font-family: var(--font-heading); font-weight: 700; color: var(--primary-dark);">7 Core Learning Categories</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">Alphabet exploration, phonics, sound blends, word builder puzzles, vocabulary, recognition, and spelling challenges.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div style="width: 42px; height: 42px; background: #F59E0B; color: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                  <i class="fa-solid fa-moon"></i>
+                </div>
+                <div>
+                  <h4 style="font-family: var(--font-heading); font-weight: 700; color: var(--primary-dark);">Story Time Library & Comprehension</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">Illustrated storybooks with line-by-line audio narration and interactive comprehension quizzes.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div style="width: 42px; height: 42px; background: #2563EB; color: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                  <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <div>
+                  <h4 style="font-family: var(--font-heading); font-weight: 700; color: var(--primary-dark);">Parent Controls & Security Gate</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-muted);">PIN-protected parent control center for multi-child profile management, progress tracking, and security settings.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Duration & Time Consumption Section -->
+    <section class="duration-section" id="duration">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-tag">QA Time Commitment</span>
+          <h2 class="section-title">Estimated Test Execution Time</h2>
+          <p class="section-subtitle">Full end-to-end testing requires a thorough walkthrough across all modules.</p>
+        </div>
+
+        <!-- Banner Highlight -->
+        <div class="duration-banner">
+          <div class="duration-banner-content">
+            <h3><i class="fa-solid fa-hourglass-half"></i> Total Estimated Test Duration</h3>
+            <p>
+              To ensure total QA validation across 7 core learning modules, user authentication, parent security controls, storybook audio playback, and progress persistence, plan for <strong>2 to 3 hours of continuous testing</strong>.
+            </p>
+          </div>
+          <div class="duration-pill-hero">
+            <span class="duration-time">2 – 3</span>
+            <span class="duration-label">Hours Total</span>
+          </div>
+        </div>
+
+        <!-- Duration Breakdown Cards -->
+        <div class="duration-grid">
+          <div class="duration-card">
+            <div class="duration-card-header">
+              <h4>Authentication & Setup</h4>
+              <span class="duration-tag">~25 Mins</span>
+            </div>
+            <p>Verify registration, sign in, account creation, password recovery, and initial sync setup.</p>
+          </div>
+
+          <div class="duration-card">
+            <div class="duration-card-header">
+              <h4>7 Learning Modules</h4>
+              <span class="duration-tag">~90 Mins (1.5h)</span>
+            </div>
+            <p>Alphabet, Phonics, Word Builder, Vocabulary, Word Recognition, Audio Prompts, and Spelling challenges.</p>
+          </div>
+
+          <div class="duration-card">
+            <div class="duration-card-header">
+              <h4>Storybook & Quizzes</h4>
+              <span class="duration-tag">~30 Mins</span>
+            </div>
+            <p>Narrated reading, line-by-line audio sync, interactive story pages, and comprehension report generation.</p>
+          </div>
+
+          <div class="duration-card">
+            <div class="duration-card-header">
+              <h4>Parent Security & PIN</h4>
+              <span class="duration-tag">~20 Mins</span>
+            </div>
+            <p>Parent PIN prompt lock, multi-child account switching, avatar selection, and progress data reset.</p>
+          </div>
+
+          <div class="duration-card">
+            <div class="duration-card-header">
+              <h4>Performance & Cache</h4>
+              <span class="duration-tag">~15 Mins</span>
+            </div>
+            <p>Audio playback stability, rapid navigation stress, offline cache verification, and resource cleanup.</p>
+          </div>
+
+          <div class="duration-card">
+            <div class="duration-card-header">
+              <h4>Bug Reporting & Logs</h4>
+              <span class="duration-tag">~10 Mins</span>
+            </div>
+            <p>Documenting crash tracebacks, unexpected UI bugs, or audio timing discrepancies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Specs & Storage Section (Android Only) -->
+    <section class="specs-section" id="specs">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-tag">Device Compatibility</span>
+          <h2 class="section-title">Android System Requirements & Storage</h2>
+          <p class="section-subtitle">Ensure your Android testing device meets these hardware specifications.</p>
+        </div>
+
+        <div class="specs-grid">
+          <!-- Minimum Specs -->
+          <div class="spec-card min-specs">
+            <span class="spec-card-badge">Minimum Requirements</span>
+            <h3>Minimum Specs</h3>
+            <ul class="spec-list">
+              <li class="spec-item">
+                <i class="fa-brands fa-android"></i>
+                <div class="spec-item-content">
+                  <strong>Operating System</strong>
+                  Android 8.0 (Oreo) or higher (API Level 26+)
+                </div>
+              </li>
+              <li class="spec-item">
+                <i class="fa-solid fa-memory"></i>
+                <div class="spec-item-content">
+                  <strong>System Memory (RAM)</strong>
+                  3 GB RAM
+                </div>
+              </li>
+              <li class="spec-item">
+                <i class="fa-solid fa-hard-drive"></i>
+                <div class="spec-item-content">
+                  <strong>Device Free Storage</strong>
+                  350 MB free storage (Base APK & database cache)
+                </div>
+              </li>
+              <li class="spec-item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <div class="spec-item-content">
+                  <strong>Display Resolution</strong>
+                  720p (HD) screen resolution
+                </div>
+              </li>
+            </ul>
+
+            <div class="spec-storage-highlight" style="background: rgba(37, 99, 235, 0.08); border-color: #93C5FD;">
+              <i class="fa-solid fa-database" style="color: #2563EB;"></i>
+              <div>
+                <strong style="color: #1E40AF; display: block; font-size: 0.85rem; text-transform: uppercase;">Minimum Storage Space</strong>
+                <span style="font-size: 0.9rem; color: #334155;">350 MB required for installation & database initialization.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recommended Specs -->
+          <div class="spec-card rec-specs">
+            <span class="spec-card-badge">Recommended for Smooth Run</span>
+            <h3>Recommended Specs</h3>
+            <ul class="spec-list">
+              <li class="spec-item">
+                <i class="fa-brands fa-android"></i>
+                <div class="spec-item-content">
+                  <strong>Operating System</strong>
+                  Android 12.0 or higher (API Level 31+)
+                </div>
+              </li>
+              <li class="spec-item">
+                <i class="fa-solid fa-microchip"></i>
+                <div class="spec-item-content">
+                  <strong>System Memory (RAM)</strong>
+                  6 GB RAM or higher
+                </div>
+              </li>
+              <li class="spec-item">
+                <i class="fa-solid fa-hard-drive"></i>
+                <div class="spec-item-content">
+                  <strong>Device Free Storage</strong>
+                  1 GB free storage (Full audio caching & log recording)
+                </div>
+              </li>
+              <li class="spec-item">
+                <i class="fa-solid fa-expand"></i>
+                <div class="spec-item-content">
+                  <strong>Display Resolution</strong>
+                  1080p (FHD) high-density screen
+                </div>
+              </li>
+            </ul>
+
+            <div class="spec-storage-highlight">
+              <i class="fa-solid fa-bolt" style="color: #38BDF8;"></i>
+              <div>
+                <strong style="color: #38BDF8; display: block; font-size: 0.85rem; text-transform: uppercase;">Recommended Storage Space</strong>
+                <span style="font-size: 0.9rem; color: #94A3B8;">1 GB free space ensures smooth 60fps audio caching & optimal performance.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testing Scope & Interactive Checklist Section -->
+    <section class="checklist-section" id="checklist">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-tag">Tester Protocol</span>
+          <h2 class="section-title">QA Verification Scope Checklist</h2>
+          <p class="section-subtitle">Click items below to keep track of completed test module verifications during your test run.</p>
+        </div>
+
+        <div class="checklist-grid" id="checklist-grid">
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">User Authentication (Sign Up, Sign In, Reset Password & PIN)</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Parent Security PIN Prompt & Lock Verification</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Alphabet Module: Sound audio clips & uppercase/lowercase recognition</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Phonics & Sound Blends matching accuracy</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Word Builder Puzzles: Letter tile snapping & drag-and-drop mechanics</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Word Recognition & Image pattern matching</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Spelling Challenge: Audio prompts, repeat button & star rewards</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Illustrated Storybook Reader & line-by-line audio sync</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Comprehension Quiz scoring & detailed report generation</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Multi-child account management & custom avatar selector</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Progress data reset & Parent Controls data persistence</span>
+          </div>
+          <div class="checklist-item">
+            <div class="checklist-checkbox"><i class="fa-solid fa-check"></i></div>
+            <span class="checklist-text">Low storage warning test & offline audio caching validation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section class="cta-section" id="download">
+      <div class="section-container text-center">
+        <h2 class="cta-title">Ready to Test MiniWhiz?</h2>
+        <p class="cta-subtitle">Download the newly published signed APK package to begin your 2–3 hour QA testing session.</p>
+        <div class="cta-buttons">
+          <a href="downloads/com.miniwhiz.miniwhiz-Signed.apk" download class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-download"></i> Download Published APK (v1.0.0)
+          </a>
+        </div>
+        <p style="margin-top: 16px; font-size: 0.85rem; color: #94A3B8;">
+          Filename: <code>com.miniwhiz.miniwhiz-Signed.apk</code> • Size: ~163.6 MB • Target: Android 8.0+
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Footer with Google OAuth Links -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="MiniWhiz Logo" class="footer-logo-img"
+          style="height: 40px; width: auto; max-height: 40px; display: block;">
+        <p class="footer-text">Early childhood literacy mobile platform.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="#duration">Test Duration</a>
+        <a href="#specs">Android Specs</a>
+        <a href="#checklist">Testing Scope</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="downloads/com.miniwhiz.miniwhiz-Signed.apk" download>Download APK</a>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 MiniWhiz. All rights reserved. Google OAuth Authorized Application Home Page.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
